@@ -1,97 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PBL2 Plant Disease Detection</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
+    <title>Plant Disease Detection</title><!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
-body {
-    background:#020617;
-    color:white;
-    font-family:sans-serif;
-}
+    body {
+        background: #020617;
+        color: white;
+        font-family: sans-serif;
+        padding: 20px;
+    }
+
+    .glass {
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    h1, h2 {
+        color: #38bdf8;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 8px;
+        background: #3b82f6;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
 </style>
 
-</head>
+</head><body><!-- TITLE -->
+<center>
+    <h1>Plant Leaf Disease Detection using CNN</h1>
+    <p>PBL-2 End Term Evaluation 2026</p>
+    <p>Student: Kshitij</p>
+    <p>Reg No: 2427030457</p>
+    <p>Guide: Dr. Jay Prakash Singh</p>
+</center>
 
-<body>
-
-<div class="text-center mt-20">
-
-<h1 class="text-5xl font-bold text-green-400">
-Plant Leaf Disease Detection using CNN
-</h1>
-
-<p class="mt-4 text-gray-400 italic">
-PBL-2 End Term 2026
-</p>
-
-<p class="mt-2">Student: Kshitij</p>
-<p>Reg No: 2427030457</p>
-
+<!-- PROBLEM -->
+<div class="glass">
+    <h2>Problem Statement</h2>
+    <p>
+        Manual detection of plant diseases is time-consuming and requires expert knowledge.
+        This project uses Convolutional Neural Networks (CNN) to automatically detect
+        diseases in plant leaves, improving accuracy and efficiency.
+    </p>
 </div>
 
-<hr style="margin-top:60px; margin-bottom:30px; border-color:#444;">
+<!-- DATASET -->
+<div class="glass">
+    <h2>Dataset</h2>
+    <p>
+        PlantVillage Dataset (Kaggle)<br>
+        ~50,000+ images<br>
+        Multiple plant disease classes
+    </p>
+</div>
 
-<h2 style="text-align:center; font-size:28px; margin-bottom:20px;">
-Final Presentation (PPT)
-</h2>
+<!-- METHODOLOGY -->
+<div class="glass">
+    <h2>Methodology</h2>
+    <ul>
+        <li>Dataset Collection</li>
+        <li>Image Preprocessing</li>
+        <li>CNN Model Training</li>
+        <li>Feature Extraction</li>
+        <li>Evaluation</li>
+    </ul>
+</div>
 
-<!-- PDF VIEWER -->
+<!-- RESULTS -->
+<div class="glass">
+    <h2>Results</h2>
+    <p>Accuracy: ~92%</p>
+
+    <canvas id="chart"></canvas>
+</div>
+
+<!-- FUTURE -->
+<div class="glass">
+    <h2>Future Work</h2>
+    <ul>
+        <li>Improve accuracy</li>
+        <li>Apply data augmentation</li>
+        <li>Deploy as mobile/web app</li>
+    </ul>
+</div>
+
+<!-- PPT SECTION -->
+<h2 style="text-align:center;">Final Presentation (PPT)</h2>
+
 <iframe 
-src="Automated%20Plant%20Leaf%20Disease%20Detection%20using%20CNN%20KSHITIJ_2427030457_H.pdf"
-width="100%"
-height="650px"
-style="border:2px solid #444; border-radius:10px;">
+    src="Automated%20Plant%20Leaf%20Disease%20Detection%20using%20CNN%20KSHITIJ_2427030457_H.pdf"
+    width="100%"
+    height="600px"
+    style="border:2px solid #444; border-radius:10px;">
 </iframe>
 
 <br><br>
 
-<!-- DOWNLOAD BUTTON -->
+<!-- DOWNLOAD PPT -->
 <div style="text-align:center;">
-<a href="Automated%20Plant%20Leaf%20Disease%20Detection%20using%20CNN%20KSHITIJ_2427030457_H.pdf" download>
-<button style="padding:12px 25px; font-size:16px; border-radius:8px; background:#22c55e; color:white;">
-⬇ Download PPT PDF
-</button>
-</a>
+    <a href="Automated%20Plant%20Leaf%20Disease%20Detection%20using%20CNN%20KSHITIJ_2427030457_H.pdf" download>
+        <button>⬇ Download PPT PDF</button>
+    </a>
 </div>
-
-<br><br>
-
-<hr style="margin-top:60px; margin-bottom:30px; border-color:#444;">
-
-<h2 style="text-align:center; font-size:28px; margin-bottom:20px;">
-Project Report
-</h2>
-
-<!-- REPORT VIEWER -->
-<iframe 
-src="Plant%20Leaf%20Disease%20Detection%20using%20Convolutional%20Neural%20Networks%20(CNN)_DT&I%20Project%20Report%20KSHITIJ_2427030457_H.pdf"
-width="100%"
-height="650px"
-style="border:2px solid #444; border-radius:10px;">
-</iframe>
 
 <br><br>
 
 <!-- DOWNLOAD REPORT -->
 <div style="text-align:center;">
-<a href="Plant%20Leaf%20Disease%20Detection%20using%20Convolutional%20Neural%20Networks%20(CNN)_DT&I%20Project%20Report%20KSHITIJ_2427030457_H.pdf" download>
-<button style="padding:12px 25px; font-size:16px; border-radius:8px; background:#3b82f6; color:white;">
-⬇ Download Report PDF
-</button>
-</a>
+    <a href="Plant%20Leaf%20Disease%20Detection%20using%20Convolutional%20Neural%20Networks%20(CNN)_DT&I%20Project%20Report%20KSHITIJ_2427030457_H.pdf" download>
+        <button>⬇ Download Report PDF</button>
+    </a>
 </div>
 
-<br><br>
-
-<footer class="text-center text-gray-500 mt-20 mb-10">
-PBL-2 • Dept of CSE • 2026 <br>
-Project Guide: Dr. Jay Prakash Singh
+<!-- FOOTER -->
+<footer style="text-align:center; margin-top:40px; color:gray;">
+    PBL-2 • Dept of CSE • 2026 <br>
+    Project Guide: Dr. Jay Prakash Singh
 </footer>
+
+<!-- CHART -->
+<script>
+    new Chart(document.getElementById("chart"), {
+        type: "bar",
+        data: {
+            labels: ["Baseline", "CNN Model"],
+            datasets: [{
+                data: [75, 92],
+                backgroundColor: ["#334155", "#3b82f6"]
+            }]
+        },
+        options: {
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+</script>
 
 </body>
 </html>
